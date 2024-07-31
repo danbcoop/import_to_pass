@@ -7,7 +7,7 @@ This little python script helps you to migrate from browser-integrated password 
 Import password file into **pass**, the standard unix password manager.
 
 ### positional arguments:
-  filename     Filename of password-file
+  *filename* &nbsp Filename of password-file
 
 ### options:
 -   -h, --help   show this help message and exit
