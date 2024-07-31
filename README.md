@@ -1,6 +1,15 @@
 # import_into_pass
 This little python script helps you to migrate from browser-integrated password managers to pass the standard unix password manager.
 
+1. Export saved passwords:
+Chrome: [https://support.google.com/chrome/answer/95606?hl=en&ref_topic=7438325&sjid=7360092539830032143-EU#zippy=%2Cshow-edit-delete-or-export-saved-passwords]
+Firefox: [https://support.mozilla.org/en-US/kb/export-login-data-firefox]
+
+2. Initialize **pass**:
+[https://www.passwordstore.org/]
+
+3. Run this script
+   
 ### Usage:
 ```shell
 python import_into_pass.py [-h] [-f] FILENAME
