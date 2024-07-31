@@ -9,8 +9,8 @@ positional arguments:
   filename     Filename of password-file
 
 options:
-  -h, --help   show this help message and exit
-  -f, --force  Overwrite existing passwords without asking
+-   -h, --help   show this help message and exit
+-   -f, --force  Overwrite existing passwords without asking
 
 # Example:
 Import from passwords.csv
