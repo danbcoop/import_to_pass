@@ -1,20 +1,20 @@
 # import_into_pass
 This little python script helps you to migrate from browser-integrated password managers to pass the standard unix password manager.
 
-### usage:
+### Usage:
 ```python import_into_pass.py [-h] [-f] FILENAME```
 
 Import password file into **pass**, the standard unix password manager.
 
-### positional arguments:
-- *filename*: Filename of password-file
+### Positional arguments:
+- *FILENAME*: filename of password-file
 
 
-### options:
--   -h, --help:   Show this help message and exit
--   -f, --force:  Overwrite existing passwords without asking
+### Options:
+-   -h, --help:   show help message and exit
+-   -f, --force:  overwrite existing passwords without asking
 
-# Example:
+### Example:
 Import from passwords.csv
 ```shell
 python import_into_pass.py passwords.csv
