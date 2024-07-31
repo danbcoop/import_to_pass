@@ -13,7 +13,7 @@ options:
   -f, --force  Overwrite existing passwords without asking
 
 # Example:
-            Import from passwords.csv
+Import from passwords.csv
                 import_to_pass.py passwords.csv
-            Import from folder/passwords.csv, overwriting existing passwords
+Import from folder/passwords.csv, overwriting existing passwords
                 import_to_pass.py -f folder/passwords.csv
