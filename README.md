@@ -15,7 +15,7 @@ https://www.passwordstore.org/
 python import_into_pass.py [-h] [-f] FILENAME
 ```
 
-Import password file into **pass**, the standard unix password manager.
+Import passwords from password file into **pass**, the standard unix password manager.
 
 ### Positional arguments:
 - *FILENAME*: filename of password-file
