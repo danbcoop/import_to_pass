@@ -14,6 +14,6 @@ options:
 
 # Example:
 Import from passwords.csv
-                import_to_pass.py passwords.csv
+```import_to_pass.py passwords.csv```
 Import from folder/passwords.csv, overwriting existing passwords
-                import_to_pass.py -f folder/passwords.csv
+`import_to_pass.py -f folder/passwords.csv`
