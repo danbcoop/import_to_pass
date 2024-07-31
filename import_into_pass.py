@@ -94,7 +94,7 @@ def read_csv(fname: str) -> tuple[List[str], List[str]]:
                         escaped = False
                         continue
             
-                item += byte
+            item += byte
             byte = f.read(1)
         return (header, data)
 
@@ -109,19 +109,23 @@ def main(args):
     except:
         print("Could not parse csv-file")
         return
-
+    
     # Get header indices
-    for index, item in enumerate(header):
-        if item == "username":
-            USER = index
-        if item == "password":
-            PASS = index
-        if item == "url":
-            URL = index
-
+    try:
+        PASS = header.index("password")
+        USER = header.index("username")
+        if "name" in header:
+            URL = header.index("name")
+        else:
+            URL = header.index("url")
+    except:
+        print(f"Could not find required rows in {args.filename}.")
+        return
+   
     # Import passwords
     for row in data:
         import_password(row[URL], row[USER], row[PASS], force=args.force)
+
 
 
 def bold(s : str) -> str:
