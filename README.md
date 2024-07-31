@@ -14,6 +14,10 @@ options:
 
 # Example:
 Import from passwords.csv
-```import_to_pass.py passwords.csv```
+```console
+foo@bar:~$ python import_to_pass.py passwords.csv
+```
 Import from folder/passwords.csv, overwriting existing passwords
-`import_to_pass.py -f folder/passwords.csv`
+```shell
+python import_to_pass.py -f folder/passwords.csv
+```
