@@ -35,7 +35,7 @@ def find_passname(passname : str) -> bool:
     """ 
     if "/" in passname:
         passname = passname.split("/")
-        command = [f"pass ls {passname[0]+"/"}"]
+        command = [f"pass ls {passname[0]+'/'}"]
         passname = passname[1]
     else:
         command = [f"pass find {passname}"]
@@ -129,7 +129,7 @@ def bold(s : str) -> str:
             
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description=f'Import password file to {bold('pass')}, the standard unix password manager.',
+        description=f'Import password file to {bold("pass")}, the standard unix password manager.',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=textwrap.dedent(
             f'''Example:
