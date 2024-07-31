@@ -17,7 +17,7 @@ Import password file into **pass**, the standard unix password manager.
 -   -f, --force:  overwrite existing passwords without asking
 
 ### Example:
-Import from *passwords.csv*, prompting before overwriting if the password-name already exists:
+Import from *passwords.csv*, prompting before overwriting if a password-name already exists:
 ```console
 foo@bar:~$ python import_into_pass.py passwords.csv
 An entry already exists for 192.168.0.1. Overwrite it? [y/N] y
